@@ -1,0 +1,99 @@
+.landingPage {
+    width: 80%;
+    margin: auto;
+  }
+  
+  .getStarted p {
+    max-width: 30rem;
+    padding-bottom: 1rem;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.1;
+    color: transparent;
+    background-color: white;
+    background-clip: text;
+    margin-bottom: 1rem;
+  }
+  
+  .getStarted button {
+    margin-bottom: 2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: colors 300ms, shadow 300ms;
+    color: #5e5e5e;
+    cursor: pointer;
+    border-radius: 9999px;
+    background-color: white;
+    height: 2.75rem;
+    padding: 0 1.375rem;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.375rem;
+    color: black;
+    box-shadow: 0 6px 16px rgba(255, 255, 255, 0.2);
+  }
+  
+  .getStarted button:hover {
+    color: #333333;
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.4);
+  }
+  
+  .logo-wall {
+    position: relative;
+    max-width: 520px;
+    /* margin: auto; */
+  }
+  .logo-wall p{
+    margin-top: 3rem;
+    margin-bottom: 10px;
+    color: #b5b5b5;
+  }
+  
+  .logo-wall:before {
+    content: '';
+    position: absolute;
+    left: -40px;
+    right: -40px;
+    top: -10px;
+    bottom: -10px;
+    max-width: 100%;
+    background: radial-gradient(circle, rgba(65, 80, 88, 0.3), transparent 70%);
+  }
+  
+  .logo-wall-mask {
+    display: flex;
+    overflow-x: hidden;
+  }
+  
+  .logo-list {
+    display: flex;
+    animation: logo-wall-animation 30s linear infinite;
+  }
+  
+  .logo-item {
+    padding: 0 15px;
+  }
+  
+  .logo-item img {
+    height: 52px;
+    max-width: none;
+    color: transparent;
+  }
+  
+  @keyframes logo-wall-animation {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .staticimg{
+    margin-top: 0%;
+    position: absolute;
+    width: 90%;
+    height: 20rem;
+  }
+  
