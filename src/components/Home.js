@@ -1,7 +1,7 @@
 import React from "react";
 import './Home.css';
 import img from '../Assets/gitness logo.svg'
-import staticImg from '../Assets/static_media-removebg-preview.png'
+// import staticImg from '../Assets/static media.jpg'
 
 const logos = [
   { src: {img}, alt: 'Metrikus', width: 117, height: 52 },
@@ -56,7 +56,7 @@ export default function Home() {
             </ul> */}
           </div>
         </div>
-        <img src={staticImg} className="staticimg"alt="hello" width="100%"/> 
+        {/* <img src={staticImg} className="staticimg"alt="hello" width="100%"/>  */}
       </section>
     </>
   );

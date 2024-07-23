@@ -1,0 +1,65 @@
+.codeHosting {
+    width: 80%;
+    margin: auto;
+  }
+  
+  .mainHead {
+    display: flex;
+    justify-content: space-around;
+    /* align-items: flex-start;  */
+    margin-top: 7rem;
+    margin-bottom: 3%;
+  }
+  
+  .head {
+    display: flex;
+    flex-direction: column;
+    width: 70%; /* Adjust width as needed */
+  }
+  
+  .head p {
+    font-size: 16px;
+    line-height: 17.92px;
+    color: #a6e5f2;
+    text-align: start;
+    font-weight: 500;
+  }
+  
+  .head h5 {
+    margin-top: 0;
+    margin-bottom: 0%;
+    font-size: 48px;
+    line-height: 53.76px;
+    text-align: start;
+    letter-spacing: 0.48px;
+    font-weight: 700;
+    width: 80%; /* Adjust width as needed */
+  }
+  
+  .getstarted {
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  .btn {
+    margin-bottom: 2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    transition: colors 300ms, shadow 300ms;
+    cursor: pointer;
+    border-radius: 9999px;
+    height: 2.75rem;
+    padding: 0 1.375rem;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.375rem;
+    color: black;
+    box-shadow: 0 6px 16px rgba(255, 255, 255, 0.2);
+  }
+  
+  .btn:hover {
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.4);
+  }
+  

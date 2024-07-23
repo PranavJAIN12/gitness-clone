@@ -5,6 +5,8 @@ import Header from './components/Header';
 import Home from './components/Home';
 import Features from './components/Features';
 import Footer from './components/Footer';
+import CodeHosting from './components/CodeHosting';
+import GitExperience from './components/GitExperience';
 
 const App = () => {
   return (
@@ -12,6 +14,8 @@ const App = () => {
     <Router>
       <Header />
       <Home/>
+      <CodeHosting/>
+      <GitExperience/>
       <Routes>
         {/* <Route path="/" exact component={<Home/>} />   */}
         <Route path="/features" component={Features} />

@@ -9,11 +9,12 @@
     font-size: 64px;
     font-weight: 700;
     line-height: 1.1;
-    color: transparent;
-    background-color: white;
-    background-clip: text;
     margin-bottom: 1rem;
-  }
+    color: transparent; 
+    background: linear-gradient(107deg, rgba(255,255,255,1) 0%, rgba(217,229,241,1) 42%, rgba(235,216,207,1) 87%);
+    background-clip: text; 
+}
+
   
   .getStarted button {
     margin-bottom: 2rem;
