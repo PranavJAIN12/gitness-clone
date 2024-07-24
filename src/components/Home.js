@@ -21,10 +21,13 @@ export default function Home() {
   return (
     <>
       <section className="landingPage">
+      <div className="left-section">
+
         <div className="getStarted">
           <p>Open-source code hosting & pipeline engine</p>
           <button className="btn">Get started</button>
         </div>
+
         <div className="logo-wall">
         <p>The world largest company that trust the Harness plattform</p>
           <div className="logo-wall-mask">
@@ -56,7 +59,20 @@ export default function Home() {
             </ul> */}
           </div>
         </div>
-        {/* <img src={staticImg} className="staticimg"alt="hello" width="100%"/>  */}
+      </div>
+      <div className="text-container">
+    <div className="text-content">
+        <div className="text-line">Andrew pushed Code</div><br/>
+        <div className="text-line" style={{marginLeft:'2rem', marginBottom:'3rem'}}>Pipeline started</div><br/>
+        <div className="text-line">125 Test completed</div><br/>
+        <div className="text-line"style={{marginLeft:'2rem', marginBottom:'3rem'}}>Found 0 Errors</div><br/>
+        <div className="text-line">Andrew pushed Code</div> <br/>
+        <div className="text-line" style={{marginLeft:'2rem' , marginBottom:'3rem'}}>Pipeline started</div><br/>
+        <div className="text-line">125 Test completed</div><br/>
+        <div className="text-line" style={{marginLeft:'2rem' , marginBottom:'3rem'}}>Found 0 Errors</div><br/>  
+    </div>
+</div>
+
       </section>
     </>
   );

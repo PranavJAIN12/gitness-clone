@@ -55,12 +55,41 @@
   display: flex;
   flex-direction: column;
   animation: scrollUp 40s linear infinite;
-  
 }
 
 .canvas-item {
   padding: 0px 0;
   list-style: none;
+}
+.canvas-item:hover {
+  opacity: 1; 
+}
+
+.canvas-item:hover ~ .canvas-item {
+  opacity: 0.3;
+}
+
+
+
+.canvas-container:before,
+.canvas-container:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 50px; 
+  pointer-events: none; 
+  z-index: 1;
+}
+
+.canvas-container:before {
+  top: 0;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.227), rgba(255, 255, 255, 0));
+}
+
+.canvas-container:after {
+  bottom: 0;
+  background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.752));
 }
 
 @keyframes scrollUp {
