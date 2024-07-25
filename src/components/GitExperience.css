@@ -55,6 +55,7 @@
   display: flex;
   flex-direction: column;
   animation: scrollUp 40s linear infinite;
+  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
 }
 
 .canvas-item {
@@ -63,10 +64,12 @@
 }
 .canvas-item:hover {
   opacity: 1; 
+  filter: brightness(200%);
 }
 
 .canvas-item:hover ~ .canvas-item {
-  opacity: 0.3;
+  /* opacity: 0.3; */
+  filter: brightness(50%);
 }
 
 
@@ -95,9 +98,11 @@
 @keyframes scrollUp {
   0% {
     transform: translateY(0);
+    
   }
   100% {
     transform: translateY(-100%);
+    
   }
 }
 
@@ -126,4 +131,31 @@
     margin-top: -10%;
     width: calc(100% + 1.35rem);
   }
+}
+.completeSolution{
+  width: 70%;
+  margin: auto;
+  margin-top: 3rem;
+  
+}
+.completeSolution p{
+  font-size: 2rem;
+  line-height: 46.58px;
+  text-align: start;
+  width:40%
+
+}
+.solBtn{
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 23%;
+  width: 80%;
+}
+.solBtn-item{
+  margin-right: 1rem;
+}
+.solBtn-item .btn{
+  background-color: #000;
+  color: aliceblue;
+  
 }

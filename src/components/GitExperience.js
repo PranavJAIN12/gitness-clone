@@ -1,5 +1,6 @@
 import React from "react";
 import './GitExperience.css'; // Import the CSS file
+import pullreq from '../Assets/pullreq.svg'
 
 const data = [
   { head: 'chore: fix authentication bug', date: '23 Jul 24', time: '09:15AM' },
@@ -16,6 +17,9 @@ const data = [
 
 export default function GitExperience() {
   return (
+    <div>
+
+    
     <div className="border-glow">
       <span className="noise"></span>
       <p className="git-experience-title">
@@ -34,6 +38,19 @@ export default function GitExperience() {
           </ul>
         </div>
       </div>
+    </div>
+    <div className="completeSolution">
+      <p>A complete solution for engineering teams of all sizes.</p>
+      <div className="solBtn">
+        <button className="solBtn-item btn" style={{backgroundColor:'#070709', color: 'white', border: '2px solid #19191b'}}><img src={pullreq} alt="mmm" height='28px' style={{marginRight:'0.5rem'}}/>  Pull Request</button>
+        <button className="solBtn-item btn" style={{backgroundColor:'#070709', color: 'white', border: '2px solid #19191b'}}><img src={pullreq} alt="mmm" height='28px' style={{marginRight:'0.5rem'}}/>Compare revisons</button>
+        <button className="solBtn-item btn" style={{backgroundColor:'#070709', color: 'white', border: '2px solid #19191b'}}><img src={pullreq} alt="mmm" height='28px' style={{marginRight:'0.5rem'}}/>Browse Code</button>
+        <button className="solBtn-item btn" style={{backgroundColor:'#070709', color: 'white', border: '2px solid #19191b'}}><img src={pullreq} alt="mmm" height='28px' style={{marginRight:'0.5rem'}}/>Quality Gates</button>
+        <button className="solBtn-item btn" style={{backgroundColor:'#070709', color: 'white', border: '2px solid #19191b'}}><img src={pullreq} alt="mmm" height='28px' style={{marginRight:'0.5rem'}}/>WebHooks</button>
+        <button className="solBtn-item btn" style={{backgroundColor:'#070709', color: 'white', border: '2px solid #19191b'}}><img src={pullreq} alt="mmm" height='28px' style={{marginRight:'0.5rem'}}/>Protected Branches</button>
+        <button className="solBtn-item btn" style={{backgroundColor:'#070709', color: 'white', border: '2px solid #19191b'}}><img src={pullreq} alt="mmm" height='28px' style={{marginRight:'0.5rem'}}/>Notification and alerts</button>
+      </div>
+    </div>
     </div>
   );
 }

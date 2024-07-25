@@ -62,14 +62,14 @@ export default function Home() {
       </div>
       <div className="text-container">
     <div className="text-content">
-        <div className="text-line">Andrew pushed Code</div><br/>
-        <div className="text-line" style={{marginLeft:'2rem', marginBottom:'3rem'}}>Pipeline started</div><br/>
-        <div className="text-line">125 Test completed</div><br/>
-        <div className="text-line"style={{marginLeft:'2rem', marginBottom:'3rem'}}>Found 0 Errors</div><br/>
-        <div className="text-line">Andrew pushed Code</div> <br/>
-        <div className="text-line" style={{marginLeft:'2rem' , marginBottom:'3rem'}}>Pipeline started</div><br/>
-        <div className="text-line">125 Test completed</div><br/>
-        <div className="text-line" style={{marginLeft:'2rem' , marginBottom:'3rem'}}>Found 0 Errors</div><br/>  
+        <div className="text-line" id="box" style={{marginBottom: '3rem'}}><div className="beam"></div>Andrew pushed Code</div><br/>
+        <div className="text-line" id="box" style={{marginLeft:'2rem', marginBottom:'3rem'}}>Pipeline started</div><br/>
+        <div className="text-line" id="box" style={{marginBottom:'3rem'}}>125 Test completed</div><br/>
+        <div className="text-line" id="box"style={{marginLeft:'2rem', marginBottom:'3rem'}}>Found 0 Errors</div><br/>
+        <div className="text-line" id="box" style={{marginBottom:'3rem'}}>Andrew pushed Code</div> <br/>
+        <div className="text-line" id="box" style={{marginLeft:'2rem' , marginBottom:'3rem'}}>Pipeline started</div><br/>
+        <div className="text-line" id="box">125 Test completed</div><br/>
+        <div className="text-line" id="box" style={{marginLeft:'2rem' , marginBottom:'3rem'}}>Found 0 Errors</div><br/>  
     </div>
 </div>
 
