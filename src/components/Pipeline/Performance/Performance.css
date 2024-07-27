@@ -1,0 +1,18 @@
+.performance{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+.performance .per-head{
+    font-size: 4rem;
+    width: 60%;
+    margin: auto;
+    line-height: 1;
+}
+.performance .per-data{
+    color: #adb0b9;
+    font-size: 1.3rem;
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+}

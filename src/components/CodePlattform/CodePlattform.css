@@ -6,14 +6,14 @@
   
   .container {
     display: flex;
-    gap: 6rem;
+    gap: 0rem;
     width: 99%; /* Changed to full width */
     margin: auto;
   }
   
   .code-text-content {
     margin-left: 11rem;
-    margin-right: 0%;
+  
   }
   
   .code-text-content h2 {
@@ -28,7 +28,7 @@
   .code-text-content p {
     font-size: 1.5rem;
     font-weight: lighter;
-    max-width: 600px; /* Adjusted to fit content */
+    max-width: 900px; /* Adjusted to fit content */
   }
   
   .code-image-content {

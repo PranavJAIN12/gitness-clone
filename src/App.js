@@ -9,6 +9,7 @@ import CodeHosting from './components/CodeHosting';
 import GitExperience from './components/GitExperience';
 import Pipeline from './components/Pipeline/Pipeline';
 import CodePlattform from './components/CodePlattform/CodePlattform';
+import Performance from './components/Pipeline/Performance/Performance';
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
       <GitExperience/>
       <Pipeline/>
       <CodePlattform/>
+      <Performance/>
       <Routes>
         {/* <Route path="/" exact component={<Home/>} />   */}
         <Route path="/features" component={Features} />
