@@ -4,12 +4,14 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './components/Home';
 import Features from './components/Features';
-import Footer from './components/Footer';
+
 import CodeHosting from './components/CodeHosting';
 import GitExperience from './components/GitExperience';
 import Pipeline from './components/Pipeline/Pipeline';
 import CodePlattform from './components/CodePlattform/CodePlattform';
 import Performance from './components/Pipeline/Performance/Performance';
+import Yaml from './components/YAML/Yaml';
+import Footer from './components/Footer/Footer';
 
 const App = () => {
   return (
@@ -22,6 +24,7 @@ const App = () => {
       <Pipeline/>
       <CodePlattform/>
       <Performance/>
+      <Yaml/>
       <Routes>
         {/* <Route path="/" exact component={<Home/>} />   */}
         <Route path="/features" component={Features} />

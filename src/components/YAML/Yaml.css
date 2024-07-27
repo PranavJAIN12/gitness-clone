@@ -1,0 +1,57 @@
+.yaml-data{
+    width: 70%;
+    margin: auto;
+    text-align: left;
+}
+.yaml-data .yaml-head{
+    font-size: 4rem;
+    width: 50%;
+    margin-bottom: 0%;
+    margin-top: 1rem;
+}
+.yaml-data .yaml-subdata{
+    display: flex;
+    justify-content: space-between;
+
+}
+.yaml-subdata p{
+    margin-top: 10px;
+    color: #adb0a9;
+    width: 50%;
+
+}
+.Cardstemplates{
+    display: flex;
+    justify-content: space-around;
+    gap: 0;
+}
+.Cardstemplates .templates p{
+    color: #646b7f;
+    width: 90%;
+    font-size: 1.3rem;
+}
+.yaml-cards{
+    
+    display: flex;
+    width: 70%;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.yaml-cards .yaml-card-item{
+    border: 1px solid #22242f;
+    margin: 0.5rem;
+    width: 25%;
+    text-align: left;
+    padding: 1%;
+    background-image: 
+    radial-gradient(121.65% 100% at 32.68% 0, #3c4155 0%, rgba(60, 65, 85, 0.18) 32.49%, rgba(60, 65, 85, 0) 51.34%),
+    radial-gradient(91.41% 43.04% at 50% 0, #1a1c24 20.67%, rgba(26, 28, 36, 0) 100%),
+    radial-gradient(69.96% 25.89% at 50% 100%, #15171e 22.77%, rgba(19, 21, 27, 0) 100%);
+
+border-radius: 15px;
+}
+.yaml-card-item p{
+    color: #646b7f;
+}
