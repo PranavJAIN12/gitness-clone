@@ -159,3 +159,18 @@
   color: aliceblue;
   
 }
+.reviewandSecurity{
+  display: flex;
+  width: 70%;
+  margin: auto;
+}
+.reviewandSecurity .review{
+  width: 40%;
+  background-color: #0d0e12;
+  color: white;
+  margin: 2rem;
+}
+.reviewandSecurity .security{
+  width: 40%;
+  margin: 2rem;
+}

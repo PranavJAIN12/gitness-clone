@@ -1,6 +1,8 @@
 import React from "react";
 import './GitExperience.css'; // Import the CSS file
 import pullreq from '../Assets/pullreq.svg'
+import review from '../Media/coding.mp4'
+import security from '../Assets/Screenshot 2024-07-27 114142.png'
 
 const data = [
   { head: 'chore: fix authentication bug', date: '23 Jul 24', time: '09:15AM' },
@@ -39,6 +41,11 @@ export default function GitExperience() {
         </div>
       </div>
     </div>
+    <section className="reviewandSecurity">
+    <div className="review"><video width="500" height="300"><source src={review} type="video/mp4"/></video><b>Code reviews.</b> Seamlessly integrates into your development workflow.</div>
+    <div className="security"><img src={security} alt="security" width="500" height="350"/></div>
+      
+    </section>
     <div className="completeSolution">
       <p>A complete solution for engineering teams of all sizes.</p>
       <div className="solBtn">
@@ -51,6 +58,7 @@ export default function GitExperience() {
         <button className="solBtn-item btn" style={{backgroundColor:'#070709', color: 'white', border: '2px solid #19191b'}}><img src={pullreq} alt="mmm" height='28px' style={{marginRight:'0.5rem'}}/>Notification and alerts</button>
       </div>
     </div>
+   
     </div>
   );
 }
