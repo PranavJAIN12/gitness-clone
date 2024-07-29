@@ -41,6 +41,19 @@ export default function Pipeline() {
           style={{ marginLeft: "3rem" }}
         />
       </div>
+      <section className="integrationandMigration">
+    <div className="Integration"><b>Code reviews.</b> Seamlessly integrates into your development workflow.</div>
+    <div className="Migration">
+
+    <button type="button" class="button">
+  <div class="button-top">Migrate</div>
+  <div class="button-bottom"></div>
+  <div class="button-base"></div>
+</button>
+<p>With a single click, Gitness can automatically migrate code repositories and pipelines from GitHub, GitLab, Bitbucket, Circle and more.</p>
+    </div>
+      
+    </section>
     </>
   );
 }

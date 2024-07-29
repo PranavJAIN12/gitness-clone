@@ -12,6 +12,7 @@ import CodePlattform from './components/CodePlattform/CodePlattform';
 import Performance from './components/Pipeline/Performance/Performance';
 import Yaml from './components/YAML/Yaml';
 import Footer from './components/Footer/Footer';
+import SetupGit from './components/SetupGit/SetupGit';
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
       <CodePlattform/>
       <Performance/>
       <Yaml/>
+      <SetupGit/>
       <Routes>
         {/* <Route path="/" exact component={<Home/>} />   */}
         <Route path="/features" component={Features} />

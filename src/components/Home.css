@@ -201,7 +201,6 @@
   width: 90%;
   height: 20rem;
 }
-
 .text-container {
   width: 100%;
   margin-left: 10rem;
@@ -215,10 +214,9 @@
 }
 
 .text-content {
-  /* position: absolute; */
   animation: scrollText 6s infinite linear;
-  
 }
+
 #box {
   display: flex;
   align-items: center;
@@ -227,49 +225,51 @@
   height: 30px;
   color: white;
   font-size: 1rem;
+  border: 3px solid transparent; /* Initial border */
+  border-image-source: linear-gradient(to right, #1976ed, #f8fdff);
+  border-image-slice: 1;
+  animation: border-animation 2s linear infinite;
 }
+@keyframes border-animation {
+  0% {
+    border-image-source: linear-gradient(to right, #1976ed, #f8fdff);
+  }
+  25% {
+    border-image-source: linear-gradient(to bottom, #1976ed, #f8fdff);
+  }
+  50% {
+    border-image-source: linear-gradient(to left, #1976ed, #f8fdff);
+  }
+  75% {
+    border-image-source: linear-gradient(to top, #1976ed, #f8fdff);
+  }
+  100% {
+    border-image-source: linear-gradient(to right, #1976ed, #f8fdff);
+  }
+}
+
 .text-line {
   --borderWidth: 3px;
   background: #1D1F20;
   position: relative;
   border-radius: var(--borderWidth);
-  
-}
-.text-line:before {
-  content: '';
-  z-index: -2;
-  text-align: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(0deg);
-  position: absolute;
-  width: 99999px;
-  height: 99999px;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  /* Border color, change middle color */
-  background-image: conic-gradient(rgba(0,0,0,0), #1976ed, rgba(0,0,0,0) 25%);
-  /* Change speed here */
-  animation: rotate 2s linear infinite;
-}
-@keyframes rotate {
-  0% {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-  25% {
-    transform: translate(-50%, -50%) rotate(90deg);
-  }
-  50% {
-    transform: translate(-50%, -50%) rotate(180deg);
-  }
-  75% {
-    transform: translate(-50%, -50%) rotate(270deg);
-  }
-  100% {
-    transform: translate(-50%, -50%) rotate(360deg);
-  }
+  padding: 0.5rem;
 }
 
+.text-line:before {
+  content: '';
+  position: absolute;
+  top: -var(--borderWidth);
+  left: -var(--borderWidth);
+  right: -var(--borderWidth);
+  bottom: -var(--borderWidth);
+  border-radius: calc(var(--borderWidth) + 1px); 
+  border: var(--borderWidth) solid transparent;
+  background: linear-gradient(90deg, #1976ed, #f8fdff);
+  background-size: 200% 200%;
+  z-index: -1;
+  animation: moveBorder 2s linear infinite;
+}
 
 
 
@@ -282,9 +282,3 @@
   83.3% { transform: translateY(-4rem); }
   100% { transform: translateY(-6rem); }
 }
-
-
-
-
-
-
