@@ -225,26 +225,27 @@
   height: 30px;
   color: white;
   font-size: 1rem;
-  border: 3px solid transparent; /* Initial border */
-  border-image-source: linear-gradient(to right, #1976ed, #f8fdff);
+  border: 2px solid transparent;
+  border-image-source: linear-gradient(to right, #745e50, #f8fdff);
   border-image-slice: 1;
-  animation: border-animation 2s linear infinite;
+  animation: border-animation 4s linear infinite;
+  border-radius: 10px;
 }
 @keyframes border-animation {
   0% {
-    border-image-source: linear-gradient(to right, #1976ed, #f8fdff);
+    border-image-source: linear-gradient(to right, #745e50, #f8fdff);
   }
   25% {
-    border-image-source: linear-gradient(to bottom, #1976ed, #f8fdff);
+    border-image-source: linear-gradient(to bottom, #745e50, #f8fdff);
   }
   50% {
-    border-image-source: linear-gradient(to left, #1976ed, #f8fdff);
+    border-image-source: linear-gradient(to left, #745e50, #f8fdff);
   }
   75% {
-    border-image-source: linear-gradient(to top, #1976ed, #f8fdff);
+    border-image-source: linear-gradient(to top, #745e50, #f8fdff);
   }
   100% {
-    border-image-source: linear-gradient(to right, #1976ed, #f8fdff);
+    border-image-source: linear-gradient(to right, #745e50, #f8fdff);
   }
 }
 
@@ -254,6 +255,7 @@
   position: relative;
   border-radius: var(--borderWidth);
   padding: 0.5rem;
+  border-radius: 3px;
 }
 
 .text-line:before {
@@ -265,7 +267,7 @@
   bottom: -var(--borderWidth);
   border-radius: calc(var(--borderWidth) + 1px); 
   border: var(--borderWidth) solid transparent;
-  background: linear-gradient(90deg, #1976ed, #f8fdff);
+  background: linear-gradient(90deg, #745e50, #f8fdff);
   background-size: 200% 200%;
   z-index: -1;
   animation: moveBorder 2s linear infinite;

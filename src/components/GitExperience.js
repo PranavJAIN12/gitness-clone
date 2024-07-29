@@ -42,9 +42,16 @@ export default function GitExperience() {
       </div>
     </div>
     <section className="reviewandSecurity">
-    <div className="review"><video width="500" height="300"><source src={review} type="video/mp4"/></video><b>Code reviews.</b> Seamlessly integrates into your development workflow.</div>
-    <div className="security"><img src={security} alt="security" width="500" height="350"/></div>
-      
+      <div className="review">
+        <video width="500" height="300" loop muted autoPlay>
+          <source src={review} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <b>Code reviews.</b> Seamlessly integrates into your development workflow.
+      </div>
+      <div className="security">
+        <img src={security} alt="security" width="500" height="350" />
+      </div>
     </section>
     <div className="completeSolution">
       <p>A complete solution for engineering teams of all sizes.</p>
