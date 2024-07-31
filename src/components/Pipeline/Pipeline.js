@@ -1,7 +1,7 @@
 import React from "react";
 import "./Pipeline.css";
 import pipeline from "../../Assets/pipeline.png";
-import integration from '../../Media/integrations.mp4'
+import integration from "../../Media/integrations.mp4";
 
 export default function Pipeline() {
   return (
@@ -43,20 +43,29 @@ export default function Pipeline() {
         />
       </div>
       <section className="integrationandMigration">
-    <div className="Integration">
-    <video  width="500" height='350' loop muted autoPlay ><source src={integration} type="video/mp4"/></video>
-    Publish, deploy, notify, report - <b>Gitness integrates with your favorite tools.</b> Create custom integration with ease and share with the community.</div>
-    <div className="Migration">
-
-    <button type="button" class="button">
-  <div class="button-top">Migrate</div>
-  <div class="button-bottom"></div>
-  <div class="button-base"></div>
-</button>
-<p>With a single click, <b>Gitness can automatically migrate code repositories and pipelines</b> from GitHub, GitLab, Bitbucket, Circle and more.</p>
-    </div>
-      
-    </section>
+        <div className="Integration">
+          <video width="500" height="350" loop muted autoPlay>
+            <source src={integration} type="video/mp4" />
+          </video>
+          Publish, deploy, notify, report -{" "}
+          <b>Gitness integrates with your favorite tools.</b> Create custom
+          integration with ease and share with the community.
+        </div>
+        <div className="Migration">
+          <button type="button" class="button">
+            <div class="button-top">Migrate</div>
+            <div class="button-bottom"></div>
+            <div class="button-base"></div>
+          </button>
+          <p>
+            With a single click,{" "}
+            <b>
+              Gitness can automatically migrate code repositories and pipelines
+            </b>{" "}
+            from GitHub, GitLab, Bitbucket, Circle and more.
+          </p>
+        </div>
+      </section>
     </>
   );
 }

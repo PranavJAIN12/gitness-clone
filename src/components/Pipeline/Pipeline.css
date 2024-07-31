@@ -1,16 +1,18 @@
-.pipeline{
-    width: 70%;
-    margin: auto;
-    margin-top: 7rem;
+.pipeline {
+  width: 70%;
+  margin: auto;
+  margin-top: 7rem;
 }
-.pipeline-subdata{
-    font-size: 1.125rem;
-    color: #070709;
-    font-weight: 400;
-    margin-bottom: 3rem;
+
+.pipeline-subdata {
+  font-size: 1.125rem;
+  color: #070709;
+  font-weight: 400;
+  margin-bottom: 3rem;
 }
-.pipeline-glow{
-margin-top: 2rem;
+
+.pipeline-glow {
+  margin-top: 2rem;
   position: relative;
   border-radius: 20px;
   height: fit-content;
@@ -19,11 +21,12 @@ margin-top: 2rem;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   width: 70%;
   margin: auto;
-  background: rgb(8,12,12);
-background: linear-gradient(106deg, rgba(8,12,12,1) 0%, rgba(29,47,49,1) 48%, rgba(13,14,18,1) 83%);
+  background: rgb(8, 12, 12);
+  background: linear-gradient(106deg, rgba(8, 12, 12, 1) 0%, rgba(29, 47, 49, 1) 48%, rgba(13, 14, 18, 1) 83%);
 }
-.pipeline-experience-title{
-position: relative;
+
+.pipeline-experience-title {
+  position: relative;
   max-width: 285px;
   margin-bottom: 2rem;
   align-items: center;
@@ -31,17 +34,19 @@ position: relative;
   font-weight: 650;
   line-height: 75.6px;
   letter-spacing: -0.02em;
-  background: linear-gradient(107deg, rgb(104, 147, 166) 0%, rgba(67,92,103,1) 33%, rgb(81, 89, 104) 70%);
+  background: linear-gradient(107deg, rgb(104, 147, 166) 0%, rgba(67, 92, 103, 1) 33%, rgb(81, 89, 104) 70%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
-.integrationandMigration{
+
+.integrationandMigration {
   display: flex;
   width: 70%;
   margin: auto;
 }
-.integrationandMigration .Integration{
+
+.integrationandMigration .Integration {
   width: 40%;
   background-color: #0d0e12;
   color: white;
@@ -49,21 +54,23 @@ position: relative;
   /* border: 1px solid white; */
   font-size: 1.3rem;
 }
-.integrationandMigration .Migration{
+
+.integrationandMigration .Migration {
   width: 40%;
   margin: 2rem;
- 
- text-align: center;
+
+  text-align: center;
   align-content: flex-end;
   padding: 1rem;
   font-size: 1.3rem;
   /* background: rgb(159,191,199);
 background: radial-gradient(circle, rgba(159,191,199,1) 0%, rgba(13,14,18,1) 100%); */
 }
+
 .button {
   -webkit-appearance: none;
-  
-  
+
+
   appearance: none;
   position: relative;
   border-width: 0;

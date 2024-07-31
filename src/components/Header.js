@@ -1,16 +1,36 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
-import gitness from '../Assets/gitness logo.svg'
+import React from "react";
+import styled from "styled-components";
+import { Link } from "react-router-dom";
+// import gitness from "../Assets/gitness logo.svg";
 
 const Navbar = () => {
   return (
     <Nav>
-      <Logo>gitness <sup style={{fontSize:'30%'}}>TM</sup></Logo>
+      <Logo>
+        gitness <sup style={{ fontSize: "30%" }}>TM</sup>
+      </Logo>
       <Menu>
-        <MenuItem><Link to="/docs">Docs</Link></MenuItem>
-        <MenuItem><Link to="/getstarted">Star us on Github</Link></MenuItem>
-        <MenuItem><Link to="/getstarted"><button className='btn' style={{height:'60%', backgroundColor:'#070709', color:'#ffffff'}}> Get Started</button></Link></MenuItem>
+        <MenuItem>
+          <Link to="/docs">Docs</Link>
+        </MenuItem>
+        <MenuItem>
+          <Link to="/getstarted">Star us on Github</Link>
+        </MenuItem>
+        <MenuItem>
+          <Link to="/getstarted">
+            <button
+              className="btn"
+              style={{
+                height: "60%",
+                backgroundColor: "#070709",
+                color: "#ffffff",
+              }}
+            >
+              {" "}
+              Get Started
+            </button>
+          </Link>
+        </MenuItem>
       </Menu>
     </Nav>
   );
@@ -42,7 +62,7 @@ const MenuItem = styled.li`
     color: white;
     text-decoration: none;
     font-size: 14px;
-    font-weight: 600
+    font-weight: 600;
   }
 `;
 
