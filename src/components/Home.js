@@ -29,7 +29,7 @@ export default function Home() {
         <div className="border" />
         <div id="main">
           <input
-            placeholder="Search..."
+            placeholder="Andrew Pushed Code"
             type="text"
             name="text"
             className="input"
@@ -55,38 +55,7 @@ export default function Home() {
               />
             </svg>
           </div>
-          <div id="search-icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width={24}
-              viewBox="0 0 24 24"
-              strokeWidth={2}
-              strokeLinejoin="round"
-              strokeLinecap="round"
-              height={24}
-              fill="none"
-              className="feather feather-search"
-            >
-              <circle stroke="url(#search)" r={8} cy={11} cx={11} />
-              <line
-                stroke="url(#searchl)"
-                y2="16.65"
-                y1={22}
-                x2="16.65"
-                x1={22}
-              />
-              <defs>
-                <linearGradient gradientTransform="rotate(50)" id="search">
-                  <stop stopColor="#f8e7f8" offset="0%" />
-                  <stop stopColor="#b6a9b7" offset="50%" />
-                </linearGradient>
-                <linearGradient id="searchl">
-                  <stop stopColor="#b6a9b7" offset="0%" />
-                  <stop stopColor="#837484" offset="50%" />
-                </linearGradient>
-              </defs>
-            </svg>
-          </div>
+        
         </div>
       </div>
     </div>
@@ -117,44 +86,26 @@ export default function Home() {
                   </li>
                 ))}
               </ul>
-              {/* <ul className="logo-list" aria-hidden="true">
-              {logos.map((logo, index) => (
-                <li key={index} className="logo-item">
-                  <img
-                    src={logo.src}
-                    alt={logo.alt}
-                    width={logo.width}
-                    height={logo.height}
-                    className="logo-image"
-                  />
-                </li>
-              ))}
-            </ul> */}
+             
             </div>
           </div>
         </div>
         <div className="text-container">
           <div className="text-content">
-            {/* <div
-              className="text-line"
-              id="box"
-              style={{ marginBottom: "3rem" }}
-            >
-              <div className="beam"></div>Andrew pushed Code
-            </div> */}
+           
 
             {ayushdiv}
             <br />
             {ayushdiv}
             
             <br />
-            {ayushdiv}
+            <div style={{marginLeft:'5rem'}}> {ayushdiv}</div>
             
             <br />
             {ayushdiv}
             
             <br />
-            {ayushdiv}
+            <div style={{marginLeft:'5rem'}}> {ayushdiv}</div>
             
             <br />
           </div>

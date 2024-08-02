@@ -607,21 +607,9 @@
   background-repeat: no-repeat;
   background-position: 0 0;
   filter: brightness(1.35);
-  background-image: conic-gradient(
-    rgba(0, 0, 0, 0),
-    #3d3a4f,
-    rgba(0, 0, 0, 0) 50%,
-    rgba(0, 0, 0, 0) 50%,
-    #3d3a4f,
-    rgba(0, 0, 0, 0) 100%
-  );
+ 
   animation: rotate 4s linear infinite;
 }
 #main {
   position: relative;
-}
-#search-icon {
-  position: absolute;
-  left: 20px;
-  top: 15px;
 }

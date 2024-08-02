@@ -1,0 +1,102 @@
+<div className="text-container">
+<div className="text-content">
+    <div className="text-line" id="box" style={{marginBottom: '3rem'}}><div className="beam"></div>Andrew pushed Code</div><br/>
+    <div className="text-line" id="box" style={{marginLeft:'2rem', marginBottom:'3rem'}}>Pipeline started</div><br/>
+    <div className="text-line" id="box" style={{marginBottom:'3rem'}}>125 Test completed</div><br/>
+    <div className="text-line" id="box"style={{marginLeft:'2rem', marginBottom:'3rem'}}>Found 0 Errors</div><br/>
+    <div className="text-line" id="box" style={{marginBottom:'3rem'}}>Andrew pushed Code</div> <br/>
+    <div className="text-line" id="box" style={{marginLeft:'2rem' , marginBottom:'3rem'}}>Pipeline started</div><br/>
+    <div className="text-line" id="box">125 Test completed</div><br/>
+    <div className="text-line" id="box" style={{marginLeft:'2rem' , marginBottom:'3rem'}}>Found 0 Errors</div><br/>  
+</div>
+</div>
+
+
+
+
+
+
+.text-container {
+    width: 100%;
+    margin-left: 10rem;
+    margin-top: 5rem;
+    padding-left: 2rem;
+    height: 20rem;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 2rem;
+    color: aliceblue;
+  }
+  
+  .text-content {
+    animation: scrollText 6s infinite linear;
+  }
+  
+  #box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 14rem;
+    height: 30px;
+    color: white;
+    font-size: 1rem;
+    border: 2px solid transparent;
+    border-image-source: linear-gradient(to right, #745e50, #f8fdff);
+    border-image-slice: 1;
+    animation: border-animation 4s linear infinite;
+    border-radius: 10px;
+  }
+  @keyframes border-animation {
+    0% {
+      border-image-source: linear-gradient(to right, #745e50, #f8fdff);
+    }
+    25% {
+      border-image-source: linear-gradient(to bottom, #745e50, #f8fdff);
+    }
+    50% {
+      border-image-source: linear-gradient(to left, #745e50, #f8fdff);
+    }
+    75% {
+      border-image-source: linear-gradient(to top, #745e50, #f8fdff);
+    }
+    100% {
+      border-image-source: linear-gradient(to right, #745e50, #f8fdff);
+    }
+  }
+  
+  .text-line {
+    --borderWidth: 3px;
+    background: #1D1F20;
+    position: relative;
+    border-radius: var(--borderWidth);
+    padding: 0.5rem;
+    border-radius: 3px;
+  }
+  
+  .text-line:before {
+    content: '';
+    position: absolute;
+    top: -var(--borderWidth);
+    left: -var(--borderWidth);
+    right: -var(--borderWidth);
+    bottom: -var(--borderWidth);
+    border-radius: calc(var(--borderWidth) + 1px); 
+    border: var(--borderWidth) solid transparent;
+    background: linear-gradient(90deg, #745e50, #f8fdff);
+    background-size: 200% 200%;
+    z-index: -1;
+    animation: moveBorder 2s linear infinite;
+  }
+  
+  
+  
+  @keyframes scrollText {
+    0% { transform: translateY(0); }
+    16.6% { transform: translateY(0); }
+    33.3% { transform: translateY(-2rem); }
+    50% { transform: translateY(-2rem); }
+    66.6% { transform: translateY(-4rem); }
+    83.3% { transform: translateY(-4rem); }
+    100% { transform: translateY(-6rem); }
+  }
+  
